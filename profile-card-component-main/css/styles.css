@@ -2,18 +2,27 @@
         font-family: 'Kumbh Sans', sans-serif;
         margin: 0;
         padding: 0;
-        border-sizing: border-box;
     }
-    #background {
+    body {
         background-image: url(../images/bg-pattern-bottom.svg);
         background-color: hsl(185, 75%, 39%);
-        height: 100%;
-        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #background {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
     }
     #card {
         width: 320px;
         height: 370px;
-        margin: 120px auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     #top-card {
         height: 150px;
